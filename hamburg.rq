@@ -1,0 +1,21 @@
+#defaultView:Map{"hide":["?id", "?safeName", "?rgb", "?geoshape"]}
+#title: Karte aller Verwaltungseinheiten in Deutschland mit Anzahl der erfassten Stolpersteine
+SELECT ?id ?name ?geoshape  ?number ?rgb
+WHERE {
+  VALUES (?id ?name ?safeURL ?number) 
+  {
+    (wd:Q1055 "Hamburg" "deutschland/hamburg" "")
+        (wd:Q1626 "Mitte" "deutschland/hamburg/mitte" "")
+        (wd:Q1630 "Altona" "deutschland/hamburg/altona" "")
+        (wd:Q1632 "Eimsbüttel" "deutschland/hamburg/eimsbuettel" "")
+        (wd:Q1627 "Nord" "deutschland/hamburg/nord" "")
+        (wd:Q1633 "Wandsbek" "deutschland/hamburg/wandsbek" "")
+        (wd:Q1637 "Bergedorf" "deutschland/hamburg/bergedorf" "")
+        (wd:Q1635 "Harburg" "deutschland/hamburg/harburg" "")
+        }
+  ?id wdt:P3896 ?geoshape .
+  BIND (IF(?number > "0","008000","d2042d") AS ?rgb)
+  SERVICE wikibase:label {
+	bd:serviceParam wikibase:language "[AUTO_LANGUAGE],de,en" .
+  }
+}
