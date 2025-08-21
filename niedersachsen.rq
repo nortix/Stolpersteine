@@ -3,18 +3,24 @@
 SELECT ?id ?name ?geoshape  ?number ?rgb
 WHERE {
   VALUES (?id ?name ?safeURL ?number) {
-    (wd:Q1197 "Niedersachsen" "deutschland/niedersachsen" "" "4128")
-    (wd:Q5947 "Landkreis Ammerland" "deutschland/niedersachsen/landkreis-ammerland" "" "1")
-    (wd:Q5929 "Landkreis Aurich" "deutschland/niedersachsen/landkreis-aurich" "" "8")
+    (wd:Q1197 "Niedersachsen" "deutschland/niedersachsen" "4128")
+    (wd:Q5947 "Landkreis Ammerland" "deutschland/niedersachsen/landkreis-ammerland" "1")
+        (wd:Q503471 "Gemeinde Apen" "deutschland/niedersachsen/landkreis-ammerland/gemeinde-apen" "0")
+        (wd:Q504526 "Gemeinde Bad Zwischenahn" "deutschland/niedersachsen/landkreis-ammerland/gemeinde-bad-zwischenahn" "0")
+        (wd:Q503410 "Gemeinde Edewecht" "deutschland/niedersachsen/landkreis-ammerland/gemeinde-edewecht" "0")
+        (wd:Q512640 "Gemeinde Rastede" "deutschland/niedersachsen/landkreis-ammerland/gemeinde-rastede" "0")
+        (wd:Q492360 "Westerstede" "deutschland/niedersachsen/landkreis-ammerland/westerstede" "0")
+        (wd:Q503388 "Gemeinde Wiefelstede" "deutschland/niedersachsen/landkreis-ammerland/gemeinde-wiefelstede" "1")
+    (wd:Q5929 "Landkreis Aurich" "deutschland/niedersachsen/landkreis-aurich" "8")
     (wd:Q2773 "Braunschweig" "deutschland/niedersachsen/braunschweig" "414")
     (wd:Q5919 "Landkreis Celle" "deutschland/niedersachsen/landkreis-celle" "115")
     (wd:Q5945 "Landkreis Cloppenburg" "deutschland/niedersachsen/landkreis-cloppenburg" "41")
-    (wd:Q5897 "Landkreis Cuxhaven" "deutschland/niedersachsen/landkreis-cuxhaven" "green" "51")
-    (wd:Q3907 "Delmenhorst" "deutschland/niedersachsen/delmenhorst" "" "40")
-    (wd:Q5956 "Landkreis Diepholz" "deutschland/niedersachsen/landkreis-diepholz" "" "44")
-    (wd:Q4174 "Emden" "deutschland/niedersachsen/emden" "" "0")
-    (wd:Q5936 "Landkreis Emsland" "deutschland/niedersachsen/landkreis-emsland" "" "199")
-    (wd:Q5932 "Landkreis Friesland" "deutschland/niedersachsen/landkreis-friesland" "" "4")
+    (wd:Q5897 "Landkreis Cuxhaven" "deutschland/niedersachsen/landkreis-cuxhaven" "51")
+    (wd:Q3907 "Delmenhorst" "deutschland/niedersachsen/delmenhorst" "40")
+    (wd:Q5956 "Landkreis Diepholz" "deutschland/niedersachsen/landkreis-diepholz" "44")
+    (wd:Q4174 "Emden" "deutschland/niedersachsen/emden" "0")
+    (wd:Q5936 "Landkreis Emsland" "deutschland/niedersachsen/landkreis-emsland" "199")
+    (wd:Q5932 "Landkreis Friesland" "deutschland/niedersachsen/landkreis-friesland" "4")
     (wd:Q6040 "Landkreis Goslar" "deutschland/niedersachsen/landkreis-goslar" "63")
     (wd:Q6022 "Landkreis Göttingen" "deutschland/niedersachsen/landkreis-goettingen" "190")
     (wd:Q5939 "Landkreis Grafschaft Bentheim" "deutschland/niedersachsen/landkreis-grafschaft-bentheim" "159")
@@ -48,7 +54,7 @@ WHERE {
     (wd:Q5931 "Landkreis Wittmund" "deutschland/niedersachsen/landkreis-wittmund" "29")
     (wd:Q6041 "Landkreis Wolfenbüttel" "deutschland/niedersachsen/landkreis-wolfenbuettel" "11")
     (wd:Q3014 "Wolfsburg" "deutschland/niedersachsen/wolfsburg" "0")	
-      		}
+    }
   ?id wdt:P3896 ?geoshape .
   BIND (IF(?number > "0","008000","d2042d") AS ?rgb)
   SERVICE wikibase:label {
