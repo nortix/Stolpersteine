@@ -1,0 +1,21 @@
+#defaultView:Map{"hide":["?id", "?safeName", "?rgb", "?geoshape"]}
+#title: Karte aller Verwaltungseinheiten in Hamburg mit Anzahl der erfassten Stolpersteine
+SELECT ?id ?name ?geoshape  ?number ?rgb
+WHERE {
+  VALUES (?id ?name ?safeURL ?number) {
+    (wd:Q1196 "Mecklenburg-Vorpommern" "deutschland/mecklenburg-vorpommern" "")
+        (wd:Q2905 "Landkreis Ludwigslust-Parchim" "deutschland/mecklenburg-vorpommern/landkreis-ludwigslust-parchim" "")
+        (wd:Q2902 "Landkreis Mecklenburgische Seenplatte" "deutschland/mecklenburg-vorpommern/landkreis-mecklenburgische-seenplatte" "")
+        (wd:Q2876 "Landkreis Nordwestmecklenburg" "deutschland/mecklenburg-vorpommern/landkreis-nordwestmecklenburg" "")
+        (wd:Q2861 "Rostock" "deutschland/mecklenburg-vorpommern/rostock" "")
+        (wd:Q2898 "Landkreis Rostock" "deutschland/mecklenburg-vorpommern/landkreis-rostock" "")
+        (wd:Q1709 "Schwerin" "deutschland/mecklenburg-vorpommern/schwerin" "")
+        (wd:Q2917 "Landkreis Vorpommern-Greifswald" "deutschland/mecklenburg-vorpommern/landkreis-vorpommern-greifswald" "")
+        (wd:Q2909 "Landkreis Vorpommern-Rügen" "deutschland/mecklenburg-vorpommern/landkreis-vorpommern-ruegen" "")
+        }
+  ?id wdt:P3896 ?geoshape .
+  BIND (IF(?number > "0","008000","d2042d") AS ?rgb)
+  SERVICE wikibase:label {
+	bd:serviceParam wikibase:language "[AUTO_LANGUAGE],de,en" .
+  }
+}

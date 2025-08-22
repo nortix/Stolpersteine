@@ -1,0 +1,66 @@
+#defaultView:Map{"hide":["?id", "?safeName", "?rgb", "?geoshape"]}
+#title: Karte aller Verwaltungseinheiten in Deutschland mit Anzahl der erfassten Stolpersteine
+SELECT ?id ?name ?geoshape  ?number ?rgb
+WHERE {
+  VALUES (?id ?name ?safeURL ?number) {
+    (wd:Q1198 "Nordrhein-Westfalen" "deutschland/nordrhein-westfalen" "") # https://de.wikipedia.org/wiki/Liste_der_Kreise_und_kreisfreien_Städte_in_Nordrhein-Westfalen
+        (wd:Q6272 "Städteregion Aachen" "deutschland/nordrhein-westfalen/staedteregion-aachen" "")
+        (wd:Q2112 "Bielefeld" "deutschland/nordrhein-westfalen/bielefeld" "")
+        (wd:Q2103 "Bochum" "deutschland/nordrhein-westfalen/bochum" "")
+        (wd:Q586 "Bonn" "deutschland/nordrhein-westfalen/bonn" "")
+        (wd:Q6191 "Kreis Borken" "deutschland/nordrhein-westfalen/kreis-borken" "")
+        (wd:Q3069 "Bottrop" "deutschland/nordrhein-westfalen/bottrop" "")
+        (wd:Q6210 "Kreis Coesfeld" "deutschland/nordrhein-westfalen/kreis-coesfeld" "")
+        (wd:Q1295 "Dortmund" "deutschland/nordrhein-westfalen/dortmund" "")
+        (wd:Q2100 "Duisburg" "deutschland/nordrhein-westfalen/duisburg" "")
+        (wd:Q6275 "Kreis Düren" "deutschland/nordrhein-westfalen/kreis-dueren" "")
+        (wd:Q1718 "Düsseldorf" "deutschland/nordrhein-westfalen/duesseldorf" "")
+        (wd:Q11280 "Ennepe-Ruhr-Kreis" "deutschland/nordrhein-westfalen/ennepe-ruhr-kreis" "")
+        (wd:Q2066 "Essen" "deutschland/nordrhein-westfalen/essen" "")
+        (wd:Q6280 "Kreis Euskirchen" "deutschland/nordrhein-westfalen/kreis-euskirchen" "")
+        (wd:Q2765 "Gelsenkirchen" "deutschland/nordrhein-westfalen/gelsenkirchen" "")
+        (wd:Q6218 "Kreis Gütersloh" "deutschland/nordrhein-westfalen/kreis-guetersloh" "")
+        (wd:Q2871 "Hagen" "deutschland/nordrhein-westfalen/hagen" "")
+        (wd:Q2880 "Hamm" "deutschland/nordrhein-westfalen/hamm" "")
+        (wd:Q6264 "Kreis Heinsberg" "deutschland/nordrhein-westfalen/kreis-heinsberg" "")
+        (wd:Q6234 "Kreis Herford" "deutschland/nordrhein-westfalen/kreis-herford" "")
+        (wd:Q2904 "Herne" "deutschland/nordrhein-westfalen/herne" "")
+        (wd:Q5946 "Hochsauerlandkreis" "deutschland/nordrhein-westfalen/hochsauerlandkreis" "")
+        (wd:Q6228 "Kreis Höxter" "deutschland/nordrhein-westfalen/kreis-hoexter" "")
+        (wd:Q6246 "Kreis Kleve" "deutschland/nordrhein-westfalen/kreis-kleve" "")
+        (wd:Q365 "Köln" "deutschland/nordrhein-westfalen/koeln" "")
+        (wd:Q2805 "Krefeld" "deutschland/nordrhein-westfalen/krefeld" "Die Einteilung der Stadtbezirke ist noch unklar")
+        (wd:Q2938 "Leverkusen" "deutschland/nordrhein-westfalen/leverkusen" "Die Einteilung der Stadtbezirke ist noch unklar")
+        (wd:Q6230 "Kreis Lippe" "deutschland/nordrhein-westfalen/kreis-lippe" "")
+        (wd:Q5937 "Märkischer Kreis" "deutschland/nordrhein-westfalen/maerkischer-kreis" "")
+        (wd:Q6257 "Kreis Mettmann" "deutschland/nordrhein-westfalen/kreis-mettmann" "")
+        (wd:Q6239 "Kreis Minden-Lübbecke" "deutschland/nordrhein-westfalen/kreis-minden-luebbecke" "")
+        (wd:Q2758 "Mönchengladbach" "deutschland/nordrhein-westfalen/moenchengladbach" "")
+        (wd:Q2899 "Mülheim an der Ruhr" "deutschland/nordrhein-westfalen/muelheim-an-der-ruhr" "")
+        (wd:Q2742 "Münster" "deutschland/nordrhein-westfalen/muenster" "")
+        (wd:Q6298 "Oberbergischer Kreis" "deutschland/nordrhein-westfalen/oberbergischer-kreis" "")
+        (wd:Q2838 "Oberhausen" "deutschland/nordrhein-westfalen/oberhausen" "")
+        (wd:Q5953 "Kreis Olpe" "deutschland/nordrhein-westfalen/kreis-olpe" "")
+        (wd:Q6224 "Kreis Paderborn" "deutschland/nordrhein-westfalen/kreis-paderborn" "")
+        (wd:Q6214 "Kreis Recklinghausen" "deutschland/nordrhein-westfalen/kreis-recklinghausen" "")
+        (wd:Q3097 "Remscheid" "deutschland/nordrhein-westfalen/remscheid" "")
+        (wd:Q6292 "Rhein-Erft-Kreis" "deutschland/nordrhein-westfalen/rhein-erft-kreis" "")
+        (wd:Q6295 "Rheinisch-Bergischer Kreis" "deutschland/nordrhein-westfalen/rheinisch-bergischer-kreis" "")
+        (wd:Q6253 "Rhein-Kreis Neuss" "deutschland/nordrhein-westfalen/rhein-kreis-neuss" "")
+        (wd:Q6287 "Rhein-Sieg-Kreis" "deutschland/nordrhein-westfalen/rhein-sieg-kreis" "")
+        (wd:Q5982 "Kreis Siegen-Wittgenstein" "deutschland/nordrhein-westfalen/kreis-siegen-wittgenstein" "")
+        (wd:Q5965 "Kreis Soest" "deutschland/nordrhein-westfalen/kreis-soest" "")
+        (wd:Q2942 "Solingen" "deutschland/nordrhein-westfalen/solingen" "")
+        (wd:Q6187 "Kreis Steinfurt" "deutschland/nordrhein-westfalen/kreis-steinfurt" "")
+        (wd:Q6163 "Kreis Unna" "deutschland/nordrhein-westfalen/kreis-unna" "")
+        (wd:Q6249 "Kreis Viersen" "deutschland/nordrhein-westfalen/kreis-viersen" "")
+        (wd:Q2839 "Kreis Warendorf" "deutschland/nordrhein-westfalen/kreis-warendorf" "")
+        (wd:Q6245 "Kreis Wesel" "deutschland/nordrhein-westfalen/kreis-wesel" "")
+        (wd:Q2107 "Wuppertal" "deutschland/nordrhein-westfalen/wuppertal" "")
+		}
+  ?id wdt:P3896 ?geoshape .
+  BIND (IF(?number > "0","008000","d2042d") AS ?rgb)
+  SERVICE wikibase:label {
+	bd:serviceParam wikibase:language "[AUTO_LANGUAGE],de,en" .
+  }
+}

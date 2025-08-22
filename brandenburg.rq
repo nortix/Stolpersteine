@@ -1,0 +1,31 @@
+#defaultView:Map{"hide":["?id", "?safeName", "?rgb", "?geoshape"]}
+#title: Karte aller Verwaltungseinheiten in Berlin mit Anzahl der erfassten Stolpersteine
+SELECT ?id ?name ?geoshape  ?number ?rgb
+WHERE {
+  VALUES (?id ?name ?safeURL ?number) {
+    (wd:Q1208 "Brandenburg" "deutschland/brandenburg" "")
+        (wd:Q6115 "Landkreis Barnim" "deutschland/brandenburg/landkreis-arnim" "")
+        (wd:Q3931 "Brandenburg an der Havel" "deutschland/brandenburg/brandenburg-an-der-havel" "")
+        (wd:Q3214 "Cottbus" "deutschland/brandenburg/cottbus" "")
+        (wd:Q6173 "Landkreis Dahme-Spreewald" "deutschland/brandenburg/landkreis-dahme-spreewald" "")
+        (wd:Q6152 "Landkreis Elbe-Elster" "deutschland/brandenburg/landkreis-elbe-elster" "")
+        (wd:Q4024 "Frankfurt (Oder)" "deutschland/brandenburg/frankfurt-oder" "")
+        (wd:Q6139 "Landkreis Havelland" "deutschland/brandenburg/landkreis-havelland" "")
+        (wd:Q6181 "Landkreis Märkisch-Oderland" "deutschland/brandenburg/landkreis-maerkisch-oderland" "")
+        (wd:Q6119 "Landkreis Oberhavel" "deutschland/brandenburg/landkreis-oberhavel" "")
+        (wd:Q6156 "Landkreis Oberspreewald-Lausitz" "deutschland/brandenburg/landkreis-oberspreewald-lausitz" "")
+        (wd:Q6178 "Landkreis Oder-Spree" "deutschland/brandenburg/landkreis-oder-spree" "")
+        (wd:Q6125 "Landkreis Ostprignitz-Ruppin" "deutschland/brandenburg/landkreis-ostprignitz-ruppin" "")
+        (wd:Q1711 "Potsdam" "deutschland/brandenburg/potsdam" "")
+        (wd:Q6142 "Landkreis Potsdam-Mittelmark" "deutschland/brandenburg/landkreis-potsdam-mittelmark" "")
+        (wd:Q6132 "Landkreis Prignitz" "deutschland/brandenburg/landkreis-prignitz" "")
+        (wd:Q6165 "Landkreis Spree-Neiße" "deutschland/brandenburg/landkreis-spree-neisse" "")
+        (wd:Q6146 "Landkreis Teltow-Fläming" "deutschland/brandenburg/landkreis-teltow-flaeming" "")
+        (wd:Q6109 "Landkreis Uckermark" "deutschland/brandenburg/landkreis-uckermark" "")
+		}
+  ?id wdt:P3896 ?geoshape .
+  BIND (IF(?number > "0","008000","d2042d") AS ?rgb)
+  SERVICE wikibase:label {
+	bd:serviceParam wikibase:language "[AUTO_LANGUAGE],de,en" .
+  }
+}
