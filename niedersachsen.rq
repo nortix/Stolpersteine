@@ -191,7 +191,7 @@ WHERE {
       (wd:Q4062 "Hameln" "deutschland/niedersachsen/landkreis-hameln-pyrmont/hameln" "78")
       (wd:Q533826 "Hessisch Oldendorf" "deutschland/niedersachsen/landkreis-hameln-pyrmont/hessisch-oldendorf" "17")
       (wd:Q555604 "Gemeinde Salzhemmendorf" "deutschland/niedersachsen/landkreis-hameln-pyrmont/gemeinde-salzhemmendorf" "18")
-    (wd:Q5963 "Region Hannover " "deutschland/niedersachsen/region-hannover" "748")
+    (wd:Q5963 "Region Hannover" "deutschland/niedersachsen/region-hannover" "748")
 				(wd:Q16022 "Barsinghausen" "deutschland/niedersachsen/region-hannover/barsinghausen" "52")
 				(wd:Q555618 "Burgdorf" "deutschland/niedersachsen/region-hannover/burgdorf" "20")
 				(wd:Q499873 "Burgwedel" "deutschland/niedersachsen/region-hannover/burgwedel" "30")
