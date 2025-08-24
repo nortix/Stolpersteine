@@ -352,7 +352,6 @@ WHERE {
       (wd:Q627741 "Gemeinde Wardenburg" "deutschland/niedersachsen/landkreis-oldenburg/gemeinde-wardenburg" "0")
       (wd:Q501626 "Wildeshausen" "deutschland/niedersachsen/landkreis-oldenburg/wildeshausen" "12")
       (wd:Q455892 "Samtgemeinde Harpstedt" "deutschland/niedersachsen/landkreis-oldenburg/samtgemeinde-harpstedt" "0")
-    (wd:Q5952 "Landkreis Oldenburg" "deutschland/niedersachsen/landkreis-oldenburg" "12")
     (wd:Q2916 "Osnabrück" "deutschland/niedersachsen/osnabrueck" "10")
     (wd:Q5940 "Landkreis Osnabrück" "deutschland/niedersachsen/landkreis-osnabrueck" "118")
     (wd:Q5926 "Landkreis Osterholz" "deutschland/niedersachsen/landkreis-osterholz" "64")
