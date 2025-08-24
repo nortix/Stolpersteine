@@ -1,9 +1,8 @@
 #defaultView:Map{"hide":["?id", "?safeName", "?rgb", "?geoshape"]}
-#title: Karte aller Verwaltungseinheiten in Deutschland mit Anzahl der erfassten Stolpersteine
+#title: Karte aller Landkreise und kreisfreien Städte in Niedersachsen mit Anzahl der erfassten Stolpersteine
 SELECT ?id ?name ?geoshape  ?number ?rgb
 WHERE {
   VALUES (?id ?name ?safeURL ?number) {
-  (wd:Q1197 "Niedersachsen" "deutschland/niedersachsen" "4128")
     # (wd:Q5947 "Landkreis Ammerland" "deutschland/niedersachsen/landkreis-ammerland" "1")
       (wd:Q503471 "Gemeinde Apen" "deutschland/niedersachsen/landkreis-ammerland/gemeinde-apen" "0")
       (wd:Q504526 "Gemeinde Bad Zwischenahn" "deutschland/niedersachsen/landkreis-ammerland/gemeinde-bad-zwischenahn" "0")
