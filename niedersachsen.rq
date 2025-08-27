@@ -192,6 +192,7 @@ WHERE {
       (wd:Q566642 "Samtgemeinde Gieboldehausen" "deutschland/niedersachsen/landkreis-goettingen/samtgemeinde-gieboldehausen" "0")
       (wd:Q316613 "Samtgemeinde Hattorf am Harz" "deutschland/niedersachsen/landkreis-goettingen/samtgemeinde-hattorf-am-harz" "0")
       (wd:Q559863 "Samtgemeinde Radolfshausen" "deutschland/niedersachsen/landkreis-goettingen/samtgemeinde-radolfshausen" "0")
+			(wd:Q820677 "Gemeindesfreies Gebiet Harz" "deutschland/niedersachsen/landkreis-goettingen/gemeindefreies-gebiet-harz" "0")
     # (wd:Q5939 "Landkreis Grafschaft Bentheim" "deutschland/niedersachsen/landkreis-grafschaft-bentheim" "159")
       (wd:Q574332 "Bad Bentheim" "deutschland/niedersachsen/landkreis-grafschaft-bentheim/bad-bentheim" "53")
       (wd:Q453926 "Samtgemeinde Emlichheim" "deutschland/niedersachsen/landkreis-grafschaft-bentheim/samtgemeinde-emlichheim" "5")
