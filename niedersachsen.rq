@@ -511,6 +511,9 @@ WHERE {
       (wd:Q15813067 "Samtgemeinde Elm-Asse" "deutschland/niedersachsen/landkreis-wolfenbuettel/samtgemeinde-elm-asse" "10")
       (wd:Q516969 "Samtgemeinde Oderwald" "deutschland/niedersachsen/landkreis-wolfenbuettel/samtgemeinde-oderwald" "0")
       (wd:Q481618 "Samtgemeinde Sickte" "deutschland/niedersachsen/landkreis-wolfenbuettel/samtgemeinde-sickte" "0")
+      (wd:Q9149316 "Gemeindefreies Gebiet Am Großen Rhode" "deutschland/niedersachsen/landkreis-wolfenbuettel/gemeindefreies-gebiet-am-grossen-rhode" "0")
+      (wd:Q9165948 "Gemeindefreies Gebiet Barnstorf-Warle" "deutschland/niedersachsen/landkreis-wolfenbuettel/gemeindefreies-gebiet-barnstorf-warle" "0")
+      (wd:Q9369060 "Gemeindefreies Gebiet Voigtsdahlum" "deutschland/niedersachsen/landkreis-wolfenbuettel/gemeindefreies-gebiet-voigtsdahlum" "0")
     (wd:Q3014 "Wolfsburg" "deutschland/niedersachsen/wolfsburg" "0")	
     }
   ?id wdt:P3896 ?geoshape .
