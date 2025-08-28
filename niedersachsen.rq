@@ -503,7 +503,14 @@ WHERE {
       (wd:Q509353 "Wittmund" "deutschland/niedersachsen/landkreis-wittmund/wittmund" "12")
       (wd:Q450023 "Samtgemeinde Esens" "deutschland/niedersachsen/landkreis-wittmund/samtgemeinde-esens" "17")
       (wd:Q523512 "Samtgemeinde Holtriem" "deutschland/niedersachsen/landkreis-wittmund/samtgemeinde-holtriem" "0")
-    (wd:Q6041 "Landkreis Wolfenbüttel" "deutschland/niedersachsen/landkreis-wolfenbuettel" "11")
+    # (wd:Q6041 "Landkreis Wolfenbüttel" "deutschland/niedersachsen/landkreis-wolfenbuettel" "11")
+      (wd:Q338664 "Gemeinde Cremlingen" "deutschland/niedersachsen/landkreis-wolfenbuettel/gemeinde-cremlingen" "0")
+      (wd:Q1462109 "Gemeinde Schladen-Werla" "deutschland/niedersachsen/landkreis-wolfenbuettel/gemeinde-schladen-werla" "0")
+      (wd:Q4122 "Wolfenbüttel" "deutschland/niedersachsen/landkreis-wolfenbuettel/wolfenbuettel" "1")
+      (wd:Q528649 "Samtgemeinde Baddeckenstedt" "deutschland/niedersachsen/landkreis-wolfenbuettel/samtgemeinde-baddeckenstedt" "0")
+      (wd:Q15813067 "Samtgemeinde Elm-Asse" "deutschland/niedersachsen/landkreis-wolfenbuettel/samtgemeinde-elm-asse" "10")
+      (wd:Q516969 "Samtgemeinde Oderwald" "deutschland/niedersachsen/landkreis-wolfenbuettel/samtgemeinde-oderwald" "0")
+      (wd:Q481618 "Samtgemeinde Sickte" "deutschland/niedersachsen/landkreis-wolfenbuettel/samtgemeinde-sickte" "0")
     (wd:Q3014 "Wolfsburg" "deutschland/niedersachsen/wolfsburg" "0")	
     }
   ?id wdt:P3896 ?geoshape .
