@@ -1,24 +1,31 @@
 #defaultView:Map{"hide":["?id", "?safeName", "?rgb", "?geoshape"]}
 #title: Karte aller Verwaltungseinheiten in Schleswig-Holstein mit der Anzahl der erfassten Stolpersteine
-SELECT ?id ?name ?geoshape  ?number ?rgb
+SELECT ?id ?name ?geoshape ?number ?rgb
 WHERE {
   VALUES (?id ?name ?safeURL ?number) {
-    (wd:Q1194 "Schleswig-Holstein" "deutschland/schleswig-holstein" "")
-        (wd:Q2947 "Kreis Dithmarschen" "deutschland/schleswig-holstein/kreis-dithmarschen" "")
-        (wd:Q3798 "Flensburg" "deutschland/schleswig-holstein/flensburg" "Die Einteilung der Stadtbezirke ist noch unklar")
-        (wd:Q3000 "Kreis Herzogtum Lauenburg" "deutschland/schleswig-holstein/kreis-herzogtum-lauenburg" "")
-        (wd:Q1707 "Kiel" "deutschland/schleswig-holstein/kiel" "Die Einteilung der Stadtbezirke ist noch unklar")
-        (wd:Q2843 "Lübeck" "deutschland/schleswig-holstein/luebeck" "Die Einteilung der Stadtbezirke ist noch unklar")
-        (wd:Q2937 "Kreis Nordfriesland" "deutschland/schleswig-holstein/kreis-nordfriesland" "")
-        (wd:Q3879 "Neumünster" "deutschland/schleswig-holstein/neumuenster" "")
-        (wd:Q2975 "Kreis Ostholstein" "deutschland/schleswig-holstein/kreis-ostholstein" "")
-        (wd:Q3006 "Kreis Pinneberg" "deutschland/schleswig-holstein/kreis-pinneberg" "")
-        (wd:Q2970 "Kreis Plön" "deutschland/schleswig-holstein/kreis-ploen" "")
-        (wd:Q2967 "Kreis Rendsburg-Eckernförde" "deutschland/schleswig-holstein/kreis-rendsburg-eckernfoerde" "")
-        (wd:Q2941 "Kreis Schleswig-Flensburg" "deutschland/schleswig-holstein/kreis-schleswig-flensburg" "")
-        (wd:Q2980 "Kreis Segeberg" "deutschland/schleswig-holstein/kreis-segeberg" "")
-        (wd:Q3011 "Kreis Steinburg" "deutschland/schleswig-holstein/kreis-steinburg" "")
-        (wd:Q3003 "Kreis Stormarn" "deutschland/schleswig-holstein/kreis-stormarn" "")
+    # (wd:Q2947 "Kreis Dithmarschen" "deutschland/schleswig-holstein/kreis-dithmarschen" "14")
+      (wd:Q516635 "Brunsbüttel" "deutschland/schleswig-holstein/kreis-dithmarschen/brunsbuettel" "0")
+      (wd:Q492322 "Heide" "deutschland/schleswig-holstein/kreis-dithmarschen/heide" "7")
+      (wd:Q479068 "Amt Burg-Sankt Michaelisdonn" "deutschland/schleswig-holstein/kreis-dithmarschen/amt-burg-sankt-michaelisdonn" "2")
+      (wd:Q479091 "Amt Büsum-Wesselburen" "deutschland/schleswig-holstein/kreis-dithmarschen/amt-buesum-wesselburen" "0")
+      (wd:Q479481 "Amt Kirchspielslandgemeinde Heider Umland" "deutschland/schleswig-holstein/kreis-dithmarschen/amt-kirchspielslandgemeinde-heider-umland" "0")
+      (wd:Q479499 "Amt Kirchspielslandgemeinden Eider" "deutschland/schleswig-holstein/kreis-dithmarschen/amt-kirchspielslandgemeinden-eider" "0")
+      (wd:Q479617 "Amt Marne-Nordsee" "deutschland/schleswig-holstein/kreis-dithmarschen/amt-marne-nordsee" "0")
+      (wd:Q479644 "Amt Mitteldithmarschen" "deutschland/schleswig-holstein/kreis-dithmarschen/amt-mitteldithmarschen" "5")
+    (wd:Q3798 "Flensburg" "deutschland/schleswig-holstein/flensburg" "52")
+    (wd:Q3000 "Kreis Herzogtum Lauenburg" "deutschland/schleswig-holstein/kreis-herzogtum-lauenburg" "6")
+    (wd:Q1707 "Kiel" "deutschland/schleswig-holstein/kiel" "265")
+    (wd:Q2843 "Lübeck" "deutschland/schleswig-holstein/luebeck" "233")
+    (wd:Q2937 "Kreis Nordfriesland" "deutschland/schleswig-holstein/kreis-nordfriesland" "59")
+    (wd:Q3879 "Neumünster" "deutschland/schleswig-holstein/neumuenster" "33")
+    (wd:Q2975 "Kreis Ostholstein" "deutschland/schleswig-holstein/kreis-ostholstein" "17")
+    (wd:Q3006 "Kreis Pinneberg" "deutschland/schleswig-holstein/kreis-pinneberg" "67")
+    (wd:Q2970 "Kreis Plön" "deutschland/schleswig-holstein/kreis-ploen" "3")
+    (wd:Q2967 "Kreis Rendsburg-Eckernförde" "deutschland/schleswig-holstein/kreis-rendsburg-eckernfoerde" "49")
+    (wd:Q2941 "Kreis Schleswig-Flensburg" "deutschland/schleswig-holstein/kreis-schleswig-flensburg" "15")
+    (wd:Q2980 "Kreis Segeberg" "deutschland/schleswig-holstein/kreis-segeberg" "13")
+    (wd:Q3011 "Kreis Steinburg" "deutschland/schleswig-holstein/kreis-steinburg" "32")
+    (wd:Q3003 "Kreis Stormarn" "deutschland/schleswig-holstein/kreis-stormarn" "20")
 		}
   ?id wdt:P3896 ?geoshape .
   BIND (IF(?number > "0","008000","d2042d") AS ?rgb)
