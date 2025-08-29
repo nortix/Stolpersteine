@@ -1,5 +1,5 @@
 #defaultView:Map{"hide":["?id", "?safeName", "?rgb", "?geoshape"]}
-#title: Karte aller Verwaltungseinheiten in Schleswig-Holstein mit Anzahl der erfassten Stolpersteine
+#title: Karte aller Verwaltungseinheiten in Schleswig-Holstein mit der Anzahl der erfassten Stolpersteine
 SELECT ?id ?name ?geoshape  ?number ?rgb
 WHERE {
   VALUES (?id ?name ?safeURL ?number) {
