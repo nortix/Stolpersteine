@@ -155,7 +155,17 @@ WHERE {
       (wd:Q479501 "Amt Kisdorf" "deutschland/schleswig-holstein/kreis-segeberg/amt-kisdorf" "0")
       (wd:Q479557 "Amt Leezen" "deutschland/schleswig-holstein/kreis-segeberg/amt-leezen" "0")
       (wd:Q480062 "Amt Trave-Land" "deutschland/schleswig-holstein/kreis-segeberg/amt-trave-land" "0")
-    (wd:Q3011 "Kreis Steinburg" "deutschland/schleswig-holstein/kreis-steinburg" "32")
+    # (wd:Q3011 "Kreis Steinburg" "deutschland/schleswig-holstein/kreis-steinburg" "32")
+      (wd:Q377277 "Glückstadt" "deutschland/schleswig-holstein/kreis-steinburg/glueckstadt" "0")
+      (wd:Q16073 "Itzehoe" "deutschland/schleswig-holstein/kreis-steinburg/itzehoe" "0")
+      (wd:Q506560 "Wilster" "deutschland/schleswig-holstein/kreis-steinburg/wilster" "0")
+      (wd:Q479040 "Amt Breitenburg" "deutschland/schleswig-holstein/kreis-steinburg/amt-breitenburg" "0")
+      (wd:Q479401 "Amt Horst-Herzhorn" "deutschland/schleswig-holstein/kreis-steinburg/amt-horst-herzhorn" "0")
+      (wd:Q430368 "Amt Itzehoe-Land" "deutschland/schleswig-holstein/kreis-steinburg/amt-itzehoe-land" "0")
+      (wd:Q473895 "Amt Kellinghusen" "deutschland/schleswig-holstein/kreis-steinburg/amt-kellinghusen" "0")
+      (wd:Q479519 "Amt Krempermarsch" "deutschland/schleswig-holstein/kreis-steinburg/amt-krempermarsch" "0")
+      (wd:Q479888 "Amt Schenefeld" "deutschland/schleswig-holstein/kreis-steinburg/amt-schenefeld" "0")
+      (wd:Q480149 "Amt Wilstermarsch" "deutschland/schleswig-holstein/kreis-steinburg/amt-wilstermarsch" "0")
     (wd:Q3003 "Kreis Stormarn" "deutschland/schleswig-holstein/kreis-stormarn" "20")
 		}
   ?id wdt:P3896 ?geoshape .
