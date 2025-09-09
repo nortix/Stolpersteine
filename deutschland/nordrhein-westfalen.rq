@@ -1,7 +1,7 @@
 #defaultView:Map{"hide":["?id", "?safeName", "?rgb", "?geoshape"]}
 #title: Karte aller Verwaltungseinheiten in Nordrhein-Westfalen mit Anzahl der erfassten Stolpersteine
 # Anzahl der Stolpersteine Stand 22. August 2025
-SELECT ?id ?name ?geoshape  ?number ?rgb
+SELECT ?id ?name ?geoshape ?number ?rgb
 WHERE {
   VALUES (?id ?name ?safeURL ?number) {
     # (wd:Q1198 "Nordrhein-Westfalen" "deutschland/nordrhein-westfalen" "") 

@@ -1,9 +1,9 @@
 #defaultView:Map{"hide":["?id", "?safeName", "?rgb", "?geoshape"]}
-#title: Karte aller Verwaltungseinheiten in Deutschland mit Anzahl der erfassten Stolpersteine
-SELECT ?id ?name ?geoshape  ?number ?rgb
+#title: Karte aller Bundesländer in Deutschland mit Anzahl der erfassten Stolpersteine
+SELECT ?id ?name ?geoshape ?number ?rgb
 WHERE {
   VALUES (?id ?name ?safeURL ?number) {
-    (wd:Q183 "Deutschland" "deutschland" "") 
+    # (wd:Q183 "Deutschland" "deutschland" "") 
 		(wd:Q985 "Baden-Württemberg" "deutschland/baden-wuerttemberg" "")
 		(wd:Q980 "Bayern" "deutschland/bayern" "")
 		(wd:Q64 "Berlin" "deutschland/berlin" "")

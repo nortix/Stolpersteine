@@ -1,6 +1,6 @@
 #defaultView:Map{"hide":["?id", "?safeName", "?rgb", "?geoshape"]}
 #title: Karte aller Landkreise und kreisfreien Städte in Niedersachsen mit Anzahl der erfassten Stolpersteine
-SELECT ?id ?name ?geoshape  ?number ?rgb
+SELECT ?id ?name ?geoshape ?number ?rgb
 WHERE {
   VALUES (?id ?name ?safeURL ?number) {
     # (wd:Q5947 "Landkreis Ammerland" "deutschland/niedersachsen/landkreis-ammerland" "1")
