@@ -1,21 +1,19 @@
 #defaultView:Map{"hide":["?id", "?safeName", "?rgb", "?geoshape"]}
-#title: Karte aller Verwaltungseinheiten in Deutschland mit Anzahl der erfassten Stolpersteine
+#title: Karte aller Verwaltungseinheiten in Bremen mit Anzahl der erfassten Stolpersteine
 SELECT ?id ?name ?geoshape ?number ?rgb
-WHERE {
+WHERE 
+{
   VALUES (?id ?name ?safeURL ?number) 
   {
-    (wd:Q1209 "Bremen" "deutschland/bremen" "954")
-        (wd:Q17278534 "Bremen Mitte" "deutschland/bremen/mitte" "159")
-        (wd:Q30145095 "Bremen Süd" "deutschland/bremen/sued" "116")
-        (wd:Q30147400 "Bremen Ost" "deutschland/bremen/ost" "287")
-        (wd:Q30147399 "Bremen West" "deutschland/bremen/west" "159")
-        (wd:Q907314 "Bremen Nord" "deutschland/bremen/nord" "79")
-        (wd:Q15627784 "Bremerhaven Nord" "deutschland/bremen/bremerhaven/nord" "0")
-        (wd:Q15627783 "Bremerhaven Süd" "deutschland/bremen/bremerhaven/sued" "0")
-    }
+    (wd:Q17278534 "Bremen Mitte" "deutschland/bremen/mitte" "159")
+    (wd:Q30145095 "Bremen Süd" "deutschland/bremen/sued" "116")
+    (wd:Q30147400 "Bremen Ost" "deutschland/bremen/ost" "287")
+    (wd:Q30147399 "Bremen West" "deutschland/bremen/west" "159")
+    (wd:Q907314 "Bremen Nord" "deutschland/bremen/nord" "79")
+    (wd:Q15627784 "Bremerhaven Nord" "deutschland/bremen/bremerhaven/nord" "0")
+    (wd:Q15627783 "Bremerhaven Süd" "deutschland/bremen/bremerhaven/sued" "0")
+  }
   ?id wdt:P3896 ?geoshape .
   BIND (IF(?number > "0","008000","d2042d") AS ?rgb)
-  SERVICE wikibase:label {
-	bd:serviceParam wikibase:language "[AUTO_LANGUAGE],de,en" .
-  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],de,en" . }
 }

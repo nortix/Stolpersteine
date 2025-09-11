@@ -2,26 +2,24 @@
 #title: Karte aller Verwaltungseinheiten in Sachsen-Anhalt mit Anzahl der erfassten Stolpersteine
 SELECT ?id ?name ?geoshape ?number ?rgb
 WHERE {
-  VALUES (?id ?name ?safeURL ?number) {
-    (wd:Q1206 "Sachsen-Anhalt" "deutschland/sachsen-anhalt" "")
-        (wd:Q6061 "Altmarkkreis Salzwedel" "deutschland/sachsen-anhalt/altmarkkreis-salzwedel" "")
-        (wd:Q6071 "Landkreis Anhalt-Bitterfeld" "deutschland/sachsen-anhalt/landkreis-anhalt-bitterfeld" "")
-        (wd:Q6064 "Landkreis Börde" "deutschland/sachsen-anhalt/landkreis-boerde" "")
-        (wd:Q6102 "Burgenlandkreis" "deutschland/sachsen-anhalt/burgenlandkreis" "")
-        (wd:Q3828 "Dessau-Roßlau" "deutschland/sachsen-anhalt/dessau-rosslau" "")
-        (wd:Q2814 "Halle (Saale)" "deutschland/sachsen-anhalt/halle-saale" "")
-        (wd:Q6087 "Landkreis Harz" "deutschland/sachsen-anhalt/landkreis-harz" "")
-        (wd:Q6068 "Landkreis Jerichower Land" "deutschland/sachsen-anhalt/landkreis-jerichower-land" "")
-        (wd:Q1733 "Magdeburg" "deutschland/sachsen-anhalt/magdeburg" "")
-        (wd:Q6092 "Landkreis Mansfeld-Südharz" "deutschland/sachsen-anhalt/landkreis-mansfeld-suedharz" "")
-        (wd:Q6098 "Saalekreis" "deutschland/sachsen-anhalt/saalekreis" "")
-        (wd:Q6081 "Salzlandkreis" "deutschland/sachsen-anhalt/salzlandkreis" "")
-        (wd:Q6057 "Landkreis Stendal" "deutschland/sachsen-anhalt/landkreis-stendal" "")
-        (wd:Q6075 "Landkreis Wittenberg" "deutschland/sachsen-anhalt/landkreis-wittenberg" "")
-		}
+  VALUES (?id ?name ?safeURL ?number)
+  {
+    (wd:Q6061 "Altmarkkreis Salzwedel" "deutschland/sachsen-anhalt/altmarkkreis-salzwedel" "")
+    (wd:Q6071 "Landkreis Anhalt-Bitterfeld" "deutschland/sachsen-anhalt/landkreis-anhalt-bitterfeld" "")
+    (wd:Q6064 "Landkreis Börde" "deutschland/sachsen-anhalt/landkreis-boerde" "")
+    (wd:Q6102 "Burgenlandkreis" "deutschland/sachsen-anhalt/burgenlandkreis" "")
+    (wd:Q3828 "Dessau-Roßlau" "deutschland/sachsen-anhalt/dessau-rosslau" "")
+    (wd:Q2814 "Halle (Saale)" "deutschland/sachsen-anhalt/halle-saale" "")
+    (wd:Q6087 "Landkreis Harz" "deutschland/sachsen-anhalt/landkreis-harz" "")
+    (wd:Q6068 "Landkreis Jerichower Land" "deutschland/sachsen-anhalt/landkreis-jerichower-land" "")
+    (wd:Q1733 "Magdeburg" "deutschland/sachsen-anhalt/magdeburg" "")
+    (wd:Q6092 "Landkreis Mansfeld-Südharz" "deutschland/sachsen-anhalt/landkreis-mansfeld-suedharz" "")
+    (wd:Q6098 "Saalekreis" "deutschland/sachsen-anhalt/saalekreis" "")
+    (wd:Q6081 "Salzlandkreis" "deutschland/sachsen-anhalt/salzlandkreis" "")
+    (wd:Q6057 "Landkreis Stendal" "deutschland/sachsen-anhalt/landkreis-stendal" "")
+    (wd:Q6075 "Landkreis Wittenberg" "deutschland/sachsen-anhalt/landkreis-wittenberg" "")
+	}
   ?id wdt:P3896 ?geoshape .
   BIND (IF(?number > "0","008000","d2042d") AS ?rgb)
-  SERVICE wikibase:label {
-	bd:serviceParam wikibase:language "[AUTO_LANGUAGE],de,en" .
-  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],de,en" . }
 }
